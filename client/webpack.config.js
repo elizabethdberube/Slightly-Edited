@@ -25,18 +25,18 @@ module.exports = () => {
 
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'src-sw.js',
+        swDest: 'service-worker.js',
       }),
 
-      // new MiniCssExtractPlugin(),
+      new MiniCssExtractPlugin(),
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Slightly Edited',
-        short_name: 'Slightly',
+        name: 'JATE',
+        short_name: 'JATE',
         description: 'Editing made easy',
-        background_color: '#00000',
-        theme_color: '#00000',
+        background_color: '#151c2f',
+        theme_color: '#151c2f',
         start_url: '/',
         publicPath: '/',
         icons: [
