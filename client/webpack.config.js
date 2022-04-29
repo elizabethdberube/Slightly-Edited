@@ -28,7 +28,7 @@ module.exports = () => {
         swDest: 'service-worker.js',
       }),
 
-      new MiniCssExtractPlugin(),
+      // new MiniCssExtractPlugin(),
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
@@ -55,10 +55,10 @@ module.exports = () => {
           test: /\.css$/i,
           use: ['style-loader', 'css-loader'],
         },
-        // {
-        //   test: /\.(svg|jpg|jpeg|gif|png)$/i,
-        //   type: 'asset/resource',
-        // },
+        {
+          test: /\.(svg|jpg|jpeg|gif|png)$/i,
+          type: 'asset/resource',
+        },
         {
           test: /\.m?js$/,
           exclude: /(node_modules|bower_components)/,
