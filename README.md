@@ -50,7 +50,7 @@ elizabethdberube@gmail.com
 
 [GitHub Repo]() 
 
-[Demo Video]() 
+[Deployed Application]() 
 
 
 ----

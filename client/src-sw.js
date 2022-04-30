@@ -4,6 +4,8 @@ const { registerRoute } = require('workbox-routing');
 const { CacheableResponsePlugin } = require('workbox-cacheable-response');
 const { ExpirationPlugin } = require('workbox-expiration');
 const { precacheAndRoute } = require('workbox-precaching/precacheAndRoute');
+// import { setDefaultHandler } from 'workbox-routing';
+// import { NetworkOnly } from 'workbox-strategies'
 
 precacheAndRoute(self.__WB_MANIFEST);
 
@@ -26,7 +28,7 @@ warmStrategyCache({
 
 registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
-// TODO: Implement asset caching
+// asset caching
 registerRoute = () => {
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
@@ -34,3 +36,6 @@ registerRoute = () => {
     });
   }
 };
+// setDefaultHandler(new NetworkOnly());
+
+// offlineFallback();
