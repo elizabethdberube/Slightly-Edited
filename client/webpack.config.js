@@ -15,7 +15,9 @@ module.exports = () => {
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
-      globalObject: 'this'
+      globalObject: 'this',
+
+
 
     },
     plugins: [
@@ -33,6 +35,7 @@ module.exports = () => {
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
+
       }),
 
       new WebpackPwaManifest({

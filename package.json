@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start:dev": "concurrently \"cd client && npm run build\" \"cd server && npm run server\"",
-    "start": "npm run build && cd server && node server.js",
+    "start": "npm run build && cd server && node server.js ",
     "server": "cd server node server.js --ignore client",
     "build": "cd client && npm run build",
     "install": "cd client && npm install",
@@ -22,6 +22,6 @@
     "concurrently": "^5.2.0",
     "favicons": "^6.2.2",
     "favicons-webpack-plugin": "^5.0.2",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.16"
   }
 }

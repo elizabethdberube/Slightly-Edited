@@ -27,8 +27,10 @@ warmStrategyCache({
   urls: ['/index.html', '/'],
   strategy: pageCache,
 });
-// (({ request }) => request.mode === 'navigate', pageCache),
-// asset caching
+
+
+registerRoute(({ request }) => request.mode === 'navigate', pageCache);
+
 registerRoute(
   ({ request }) => ['style', 'script', 'worker'].includes(request.destination),
   new StaleWhileRevalidate({
