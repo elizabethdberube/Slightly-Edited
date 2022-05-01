@@ -22,13 +22,18 @@ module.exports = () => {
       new HtmlWebpackPlugin({
         template: './index.html',
         title: 'Webpack Plugin',
+        favicon: "./favicon.ico",
+        filename: "index.html",
+        template: "./index.html",
       }),
       new MiniCssExtractPlugin(),
+
+
+
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
       }),
-
 
       new WebpackPwaManifest({
         fingerprints: false,
@@ -57,7 +62,7 @@ module.exports = () => {
           use: [MiniCssExtractPlugin.loader, 'css-loader'],
         },
         {
-          test: /\.(svg|jpg|jpeg|gif|png)$/i,
+          test: /\.(svg|jpg|jpeg|ico|png)$/i,
           type: 'asset/resource',
         },
         {
