@@ -1,5 +1,6 @@
 import { openDB } from 'idb';
 
+// Start the database.
 const initdb = async () =>
   openDB('jate', 1, {
     upgrade(db) {
@@ -22,7 +23,7 @@ export const putDb = async (content) => {
 
   const save = tx.objectStore('jate');
 
-  const request = save.put({ jate: content });
+  const request = save.put({ content_name: content });
 
   const result = await request;
 

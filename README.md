@@ -57,4 +57,4 @@ elizabethdberube@gmail.com
 
 ## Pictures
 
-![image](./Screenshot.png)
+![image](./image/Screenshot.png)
