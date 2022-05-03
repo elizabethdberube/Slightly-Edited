@@ -6,7 +6,7 @@ const { ExpirationPlugin } = require('workbox-expiration');
 const { precacheAndRoute } = require('workbox-precaching/precacheAndRoute');
 const { StaleWhileRevalidate } = require('workbox-strategies');
 
-offlineFallback();
+
 
 precacheAndRoute(self.__WB_MANIFEST);
 
