@@ -3,11 +3,9 @@
 
 ## Description
 Some features of this application.
-1. This app can easily be used for editing text in the browser.  
-2. User can also click on install button to install editor locally.
-3. When the user enters content and subsequently clicks off of the DOM window then the user's content is saved.
-4. When the user reopens the application then the content in the text editor has been retrieved from our IndexedDB.
-
+1. This app can easily be used for editing text in the browser or installed locally.  
+2. When the user enters content and subsequently clicks off of the DOM window then the user's content is saved.
+3. When the user reopens the application then the content in the text editor has been retrieved from our IndexedDB for easy editing.
 
 ---
 
