@@ -48,9 +48,9 @@ elizabethdberube@gmail.com
 ## Links
 
 
-[GitHub Repo]() 
+[GitHub Repo](https://vast-sea-43373.herokuapp.com/) 
 
-[Deployed Application]() 
+[Deployed Application](https://github.com/elizabethdberube/Slightly-Edited) 
 
 
 ----
